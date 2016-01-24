@@ -1,5 +1,23 @@
+@mixin fonttype {
+  font-family: 'Indie Flower', cursive;
+  color: #006699;
+  text-align: center; 
+}
+
 body {
-  font-family: Verdana;
+  h1 {
+  @include fonttype;
+  }
+}
+
+body {
+  h2 {
+  @include fonttype;
+  }
+}
+
+body {
+  @include fonttype;
   font-size: 1.5em;
 }
 
@@ -9,7 +27,7 @@ body {
 
 #team-members .member {
   float: left;
-  /*border: 1px solid gray;*/
+  border: 1px solid gray;
   margin: 10px;
   padding: 6px;
 }
